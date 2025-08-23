@@ -11,16 +11,15 @@ int main() {
     string inputText;
     string result;
 
-    cout << "Enter a sentence: ";
-    getline(cin, inputText);
+   cout << "Enter a sentence: ";
+   getline(cin, inputText);
 
-    for (char c : inputText) {
+   for (char c : inputText) {
         if (!isVowel(c)) {
             result += c;
         }
     }
-
-    cout << "Text after removing vowels: " << result << endl;
+   cout << "Text after removing vowels: " << result << endl;
 
     return 0;
 }
